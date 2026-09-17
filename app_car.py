@@ -37,7 +37,7 @@ def load_artifacts():
 
 
 encoders, uniques, scaler, svm = load_artifacts()
-clasnames = uniques[2]  # noms des classes
+clasnames = uniques[3]  # noms des classes
 
 
 
