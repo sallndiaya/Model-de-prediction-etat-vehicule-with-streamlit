@@ -32,7 +32,7 @@ def load_artifacts():
     encoders = jb.load("encoders.joblib")   # encodeurs (Marque, Quartier, Transmission)
     uniques = jb.load("uniques.joblib")     # valeurs uniques
     scaler = jb.load("scaler.joblib")       # normaliseur
-    xgb = jb.load("svm_model.joblib")       # modèle
+    svm = jb.load("svm_model.joblib")       # modèle
     return encoders, uniques, scaler, svm
 
 
