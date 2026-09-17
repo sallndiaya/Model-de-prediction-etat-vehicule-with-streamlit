@@ -90,7 +90,7 @@ with onglet1:
         col1, col2 = st.columns(2)
         with col1:
             Marque = st.selectbox("Marque", options=list(uniques[0]))
-            Année = st.number_input("Année", value=0.0, step=0.1, format="%.2f")
+            Année = st.number_input("Année", value=0, step=1, format="%d")
             Transmission = st.selectbox("Transmission", options=list(uniques[1]))
         with col2:
             Quartier = st.selectbox("Quartier", options=list(uniques[2]))
