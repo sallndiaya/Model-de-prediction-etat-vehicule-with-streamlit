@@ -94,7 +94,7 @@ with onglet1:
             Transmission = st.selectbox("Transmission", options=list(uniques[1]))
         with col2:
             Quartier = st.selectbox("Quartier", options=list(uniques[2]))
-            prix = st.number_input("Prix", value=0.0, step=1000.0, format="%.2f")
+            Prix = st.number_input("Prix", value=0.0, step=1000.0, format="%.2f")
 
         soumettre = st.form_submit_button("Prédire", type="primary")
 
