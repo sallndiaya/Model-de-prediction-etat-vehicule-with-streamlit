@@ -45,9 +45,9 @@ clasnames = uniques[3]  # noms des classes
 
 def Pred_func(Marque, Année, Transmission, Quartier, Prix):
     # Encoder   marque,transmission et Quartier
-    Marque = encoders[0].transform([Marque])[0]
-    Transmission = encoders[1].transform([Transmission])[0]
-    Quartier = encoders[2].transform([Quartier])[0]
+    Marque_encoded = encoders[0].transform([Marque])[0]
+    Transmission_encoded = encoders[1].transform([Transmission])[0]
+    Quartier_encoded = encoders[2].transform([Quartier])[0]
     # Vecteur des valeurs numériques
     x_new = np.array([Marque, Année, Transmission, Quartier, Prix])
     x_new = x_new.reshape(1, -1)  # conversion en un tableau 2D
