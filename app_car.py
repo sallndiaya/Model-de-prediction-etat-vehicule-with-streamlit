@@ -49,7 +49,7 @@ def Pred_func(Marque, Année, Transmission, Quartier, Prix):
     Transmission = encoders[1].transform([Transmission])[0]
     Quartier = encoders[2].transform([Quartier])[0]
     # Vecteur des valeurs numériques
-    x_new = np.array([Année,Prix])
+    x_new = np.array([Marque, Année, Transmission, Quartier, Prix])
     x_new = x_new.reshape(1, -1)  # conversion en un tableau 2D
     # Normaliser les données
     x_new = scaler.transform(x_new)
