@@ -57,7 +57,7 @@ def Pred_func(Marque, Année, Transmission, Quartier, Prix):
         "Quartier": Quartier_encoded,
         "Prix": Prix
     }])
-    x_new = x_new.reshape(1, -1)  # conversion en un tableau 2D
+    #x_new = x_new.reshape(1, -1)  # conversion en un tableau 2D
     # Normaliser les données
     x_new = scaler.transform(x_new)
     # Prédire
