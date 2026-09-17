@@ -50,6 +50,13 @@ def Pred_func(Marque, Année, Transmission, Quartier, Prix):
     Quartier_encoded = encoders[2].transform([Quartier])[0]
     # Vecteur des valeurs numériques
     x_new = np.array([Marque, Année, Transmission, Quartier, Prix])
+    x_new = pd.DataFrame([{
+        "Marque": Marque_encoded,
+        "Année": Année,
+        "Transmission": Transmission_encoded,
+        "Quartier": Quartier_encoded,
+        "Prix": Prix
+    }])
     x_new = x_new.reshape(1, -1)  # conversion en un tableau 2D
     # Normaliser les données
     x_new = scaler.transform(x_new)
