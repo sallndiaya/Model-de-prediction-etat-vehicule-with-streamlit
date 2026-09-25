@@ -2,7 +2,7 @@
 Application Streamlit — Prédiction de l'état d'un vehicule
 Conversion directe de l'application Gradio d'origine.
 
-Lancement en local :  streamlit run app.py
+Lancement en local :  streamlit run app_car.py
 """
 
 import numpy as np # type: ignore
@@ -14,13 +14,13 @@ import streamlit as st # type: ignore
 # Configuration de la page
 st.set_page_config(
     page_title="Prédiction de l'état d'un Vehicule",
-    page_icon="📱",
+    page_icon="🚘",
     layout="centered",
 )
 
 DESCRIPTION = (
     "Ce modèle de machine permet de prédire l'état du vehicule en partant "
-    "du marque , de l'anee, de la trasmission du vehicule, le quartier et du prix "
+    "du marque , de l'anee, de la trasmission du vehicule, le quartier et du prix Model SVM "
 
 )
 
@@ -77,7 +77,7 @@ def Pred_func_csv(file):
 
 # Interface
 
-st.title("📱 Prédiction de l'état d'un vehicule")
+st.title("🚘 Prédiction de l'état d'un vehicule")
 
 onglet1, onglet2 = st.tabs(["Prédiction simple", "Prédiction multiple"])
 
